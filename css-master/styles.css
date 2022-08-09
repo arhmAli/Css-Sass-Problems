@@ -1,0 +1,66 @@
+
+body{
+    text-align:center;
+    position: relative;
+    margin: 0%;
+    background-color: #E4F9F5;
+    font-family: 'Merriweather', 'serif';
+}
+h1{
+    text-align:center;
+    margin: 0%;
+    position: relative;
+    left: 200px;
+    top: 200px;
+    }
+h2{
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    left: 200px;
+    
+}
+hr{
+    color: #E4F9F5;
+}
+.top-container{
+    text-align: center;
+    margin-left: 250px;
+}
+ 
+.middle-container {
+    position: relative;
+    left: 430px;
+    top: 800px;
+    height: 200px;
+    width: 200px;
+} 
+.touch{
+    position: relative;
+    left: 0px;
+}   
+.bottom-container{
+    height: 200px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    top: 1500px;
+    left:1050px;
+}
+.top-container{
+    background-color: #E4F9F5;
+    height: 200px;
+    width: 200px;
+}
+img{
+    text-align: right;
+}
+.intro{
+    position: relative;
+    bottom:400px;
+    left: 0px;
+}
+.my-skills{
+    position: relative;
+    bottom:250px;
+    left:0px ;
+}
