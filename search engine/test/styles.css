@@ -1,0 +1,15 @@
+body {
+    margin: 0%;
+    border: 0%;
+}
+
+div {
+    display: inline-block;
+    color: blue;
+    border: 2px aqua solid;
+    margin: 40%, 40%;
+    width: 80%;
+    padding-top: 10px;
+    background-color: #000;
+    text-align: center;
+}
