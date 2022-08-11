@@ -1,0 +1,17 @@
+/* WRITE YOUR CODE IN HERE!!!!  */
+
+.square:nth-of-type(n) {
+    background-color: red;
+}
+
+.square:nth-of-type(2n) {
+    background-color: black;
+}
+
+.square:hover {
+    height: 50px;
+}
+
+.square:active {
+    height: 500px;
+}

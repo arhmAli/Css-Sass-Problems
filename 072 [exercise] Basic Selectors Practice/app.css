@@ -1,0 +1,26 @@
+/* Make all LI's blue */
+
+h1 {
+    color: magenta;
+    background-color: mediumvioletred;
+    display: inline-block;
+}
+
+li {
+    color: blue;
+}
+
+
+/* Make everything with the class of 'done' grey*/
+
+.done {
+    color: grey;
+}
+
+
+/* Make the element with the id of 'clear' have a red BG and white text */
+
+#clear {
+    background-color: red;
+    color: white;
+}
