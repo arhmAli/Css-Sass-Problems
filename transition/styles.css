@@ -1,0 +1,35 @@
+body {
+    background-color: azure;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section div {
+    background-color: brown;
+    width: 100px;
+    height: 80px;
+    border: 1px solid red;
+    transition: margin-left 3s;
+    /*display: inline-block;*/
+    margin: 20px 0;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
+
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: linear;
+}
+
+div:nth-of-type(4) {
+    transition-timing-function: (0.7, 0, 0.84, 0);
+}
