@@ -1,0 +1,50 @@
+*{
+    font-size: 10px;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: yellowgreen;
+}
+h1{
+    font-weight: 300;
+    font-size: 5rem;
+    font-style:italic;
+    display: flex;
+    margin: 20% auto;
+    justify-content: center;
+    animation: theAnimation 0.5s linear;
+
+}
+h1:hover{
+    cursor: pointer;
+    transform: skew(180deg);
+    color: red;
+    transition: all 0.5s ease-in; 
+}
+button{
+    display: flex;
+    margin: -10% auto;
+}
+.first-one{
+    font-size: 2rem;
+    text-decoration: none;
+    box-shadow: 10px red;
+    padding: 2px;
+    font-style: oblique;
+}
+.first-one:hover{
+    cursor: pointer;
+    background-color: aqua;
+    transform: rotateX(360deg);
+    transition: all 0.5s ease-in;
+}
+@keyframes theAnimation{
+    from{
+    	margin-left: 0%;
+    }
+	to{
+    	margin-left:50%;
+    }
+}
