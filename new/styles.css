@@ -1,0 +1,30 @@
+html {
+    background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%);
+}
+
+h2.raze {
+    color: orangered;
+}
+
+h2.reyna {
+    color: purple;
+}
+
+h2.jett {
+    color: #9adeff;
+}
+
+img.jett {
+    height: 50px;
+    width: 50px;
+}
+
+img.raze {
+    height: 50px;
+    width: 50px;
+}
+
+img.reyna1 {
+    height: 50px;
+    width: 50px;
+}
