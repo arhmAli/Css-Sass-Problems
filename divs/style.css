@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: aqua;
+    height: 90vh;
+    width: 10vw;
+    margin-top: 40px;
+}
+
+.side-bar span {
+    margin-bottom: 20px;
+}
+
+.side-bar button {
+    border: 1px solid salmon;
+    width: 20px;
+    color: rgba(75, 74, 74, 0.432);
+}
+
+.top-row {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-row button {
+    border: none;
+    background: rgba(97, 96, 96, 0.4);
+}
+
+.play:hover {
+    cursor: pointer;
+    background-color: rgba(17, 124, 151, 0.76);
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+}
