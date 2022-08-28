@@ -1,0 +1,96 @@
+@import './variable.scss';
+.parent{
+    display: flex;
+    height:6rem;
+    width:100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:$navbar-color ;
+    justify-content: flex-start;
+    & a{
+        display: flex;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 2rem;
+        height: fit-content;
+        justify-content: center;
+        border: 1px solid ;    
+        margin-top: 1.5rem;
+        
+        &:not(last-child) {
+            margin-right: 2.5rem;
+        }
+        &:first-child{
+            margin-left: 2rem;
+        }
+    }
+    & .forms input{
+        display: flex;
+        position: absolute;
+        height: 2.5rem;
+        width: fit-content;
+        margin-left: 70%;
+        margin-top: 1rem;
+
+    }
+    & .forms button{
+        display: flex;
+        position: absolute;
+        height: 2rem;
+        width: fit-content;
+        justify-content: center;
+        padding: 2px 2px 2px 2px;
+        border-radius: 5px;
+        margin-left: 76vw;
+        margin-top: 1rem;
+        justify-content: right;
+    }
+}
+.media{
+    height: 20rem;
+    width:fit-content;
+    background-color: $navbar-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+@media (min-width:376px){
+    .icon {display: none}
+    .media{
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+   
+    .anchor{
+        display: none;
+        opacity: 0;
+    }
+    .forms{
+        display: none;
+    }
+    .icon:active {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    // .first{
+    //     opacity: 1;
+    // }
+    i { margin-left: 50%;
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        
+    
+}
+// if i wannna do a column navbar ez pz
+// .parent{
+//     flex-direction: column;
+//     height: 100vh;
+//     width: 100vw;
+// }
+}
+
+    

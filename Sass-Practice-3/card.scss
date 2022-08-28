@@ -1,0 +1,33 @@
+.child{
+    perspective: 150rem;
+    height: 150px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+        &__side{
+            transition: all 0.5s ease;
+            height: 150px;
+            width: 50px;
+            position: absolute;
+            top: 0%;
+            left: 0;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 1.5rem 4rem rgba(black,0.15);
+            &--front{
+                background-color: white;
+            }
+            &--back{
+                background-color: aqua;
+                transform: rotateY(180deg);
+            }
+        }
+        &:hover &__side--front{
+            transform: rotateY(-180deg);
+        }
+        
+        &:hover &__side--back{
+            transform: rotateY(0deg);
+        }
+    }

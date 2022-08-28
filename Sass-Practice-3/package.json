@@ -1,0 +1,15 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css"
+  },
+  "author": "arhamkhan",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.5"
+  }
+}

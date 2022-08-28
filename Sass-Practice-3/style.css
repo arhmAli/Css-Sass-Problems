@@ -1,0 +1,106 @@
+.child {
+  perspective: 150rem;
+  height: 150px;
+  position: relative;
+  top: 0%;
+  left: 0%; }
+  .child__side {
+    transition: all 0.5s ease;
+    height: 150px;
+    width: 50px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .child__side--front {
+      background-color: white; }
+    .child__side--back {
+      background-color: aqua;
+      transform: rotateY(180deg); }
+  .child:hover .child__side--front {
+    transform: rotateY(-180deg); }
+  .child:hover .child__side--back {
+    transform: rotateY(0deg); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-size: 10px;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%); }
+
+.parent {
+  display: flex;
+  height: 6rem;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #525050;
+  justify-content: flex-start; }
+  .parent a {
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+    height: fit-content;
+    justify-content: center;
+    border: 1px solid;
+    margin-top: 1.5rem; }
+    .parent a:not(last-child) {
+      margin-right: 2.5rem; }
+    .parent a:first-child {
+      margin-left: 2rem; }
+  .parent .forms input {
+    display: flex;
+    position: absolute;
+    height: 2.5rem;
+    width: fit-content;
+    margin-left: 70%;
+    margin-top: 1rem; }
+  .parent .forms button {
+    display: flex;
+    position: absolute;
+    height: 2rem;
+    width: fit-content;
+    justify-content: center;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    margin-left: 76vw;
+    margin-top: 1rem;
+    justify-content: right; }
+
+.media {
+  height: 20rem;
+  width: fit-content;
+  background-color: #525050;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+@media (min-width: 376px) {
+  .icon {
+    display: none; }
+  .media {
+    display: none; } }
+
+@media (max-width: 375px) {
+  .anchor {
+    display: none;
+    opacity: 0; }
+  .forms {
+    display: none; }
+  .icon:active .media {
+    display: flex;
+    flex-direction: column; }
+  i {
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute; } }
