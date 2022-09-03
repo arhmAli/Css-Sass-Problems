@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "compile:sass": "node-sass flex.scss style.css" 
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
