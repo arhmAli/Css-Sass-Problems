@@ -1,0 +1,79 @@
+.parent-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.form-part{
+    justify-content: center;
+    align-items: center;
+    margin: 10% 35%;
+    width: 80vw;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background: rgb(39,91,168);
+    background: linear-gradient(108deg, rgba(39,91,168,1) 0%, rgba(104,74,242,1) 100%);
+
+    & form{
+        padding: 50px;
+        padding-top: 100px;
+        padding-right: 70px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    label{
+        margin-top: 200px;
+        margin-right: 47%;
+    }
+    input{
+        height: 20px;
+        width: max-content;
+    }
+    li{
+        flex-direction: column;
+        margin-top: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .terms{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        top: -10px;
+    }
+    .submit-btn{
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: aquamarine;
+        &:hover{
+            cursor: pointer;
+            animation: pop-on-hover 0.4s linear;
+        }
+    }
+    .reset-btn{
+        border: none;
+        background: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.column-nav{
+    flex-direction: column;
+    padding: 50px;
+    margin-left: 50px;
+    background-color: aquamarine;
+    margin-top: 200px;
+    width: 20vw;
+    height: 50vh;
+    .firstOne{
+        color:grey;
+    }
+}
+@keyframes pop-on-hover {
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
